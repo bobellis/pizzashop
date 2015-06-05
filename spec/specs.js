@@ -25,4 +25,12 @@ describe('order', function(){
     newOrder.addPizza(newPizza2);
     expect(newOrder.pizzas).to.eql([newPizza, newPizza2]);
   });
+
+  it("allows us to calculate the cost of an order", function(){
+    var newPizza = new Pizza("large", ["onions", "pepperoni"]);
+    var newOrder = new Order(newPizza);
+    var newPizza2 = new Pizza("medium", ["onions", "pepperoni"]);
+    newOrder.addPizza(newPizza2);
+    expect(newOrder.orderCost).to.equal(34);
+  })
 });
