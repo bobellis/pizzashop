@@ -14,3 +14,7 @@ body{
   display: block;
   padding: 40;
 }
+
+#pizza-gif{
+  float: right;
+}
