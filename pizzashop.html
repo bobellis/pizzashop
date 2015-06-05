@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Pizza Shop</title>
+    <div class="jumbotron" style="center">
+      <center><h1>Welcome to the pizza shop!</h1></center>
+    </div>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="pizza-order">
+      <form action="submit" id="add-pizza-form">
+        <label> What size pizza do you want?
+          <select class = "form-control" id="pizza-size">
+            <option>small</option>
+            <option>medium</option>
+            <option>large</option>
+          </select>
+        </label>
+        <br>
+        <label> Please select your toppings:
+          <br>
+          <input type="checkbox" name="toppings" value="anchovies"> anchovies
+          <br>
+          <input type="checkbox" name="toppings" value="bacon"> bacon</input>
+          <br>
+          <input type="checkbox" name="toppings" value="gorgonzola"> gorgonzola</input>        <br>
+          <input type="checkbox" name="toppings" value="ham"> ham</input>
+          <br>
+          <input type="checkbox" name="toppings" value="mushrooms"> mushrooms</input>        <br>
+          <input type="checkbox" name="toppings" value="onions"> onions</input>        <br>
+          <input type="checkbox" name="toppings" value="pepperoni"> pepperoni</input>        <br>
+          <input type="checkbox" name="toppings" value="pineapple"> pineapple</input>        <br>
+        </label>
+          <button class="btn btn-success" type="submit">Add Pizza</button>
+      </form>
+
+    <form id="order">
+      <h3>Your order: </h3>
+
+    </form>
+  </div>
+
+    <span id="total"></span>
+    <a href="pizzashop.html">Start Over</a>
+  </body>
+</html>
