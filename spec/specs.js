@@ -31,6 +31,6 @@ describe('order', function(){
     var newOrder = new Order(newPizza);
     var newPizza2 = new Pizza("medium", ["onions", "pepperoni"]);
     newOrder.addPizza(newPizza2);
-    expect(newOrder.orderCost).to.equal(34);
+    expect(newOrder.orderCost()).to.equal(34);
   })
 });
