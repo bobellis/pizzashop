@@ -6,11 +6,11 @@ body{
   display: block;
   padding: 40;
   float: left;
-  width: 400px;
+  width: 500px;
 }
 
 .pizza-order{
-  margin-left: 400px;
+  margin-left: 500px;
   display: block;
   padding: 40;
 }
