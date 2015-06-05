@@ -56,7 +56,11 @@ $(function(){
 
     newPizza = new Pizza(pizzaSize, toppings);
     newOrder.addPizza(newPizza);
-    $("#pizza-list").append(newPizza.pizzaSize + " pizza with " + newPizza.toppings + '<br>');
+    $("#pizza-list").append(newPizza.pizzaSize + " pizza with " + newPizza.toppings + ": $" + newPizza.pizzaCost() + '<br>');
     $("#order").text("Your total for " + newOrder.pizzas.length + " pizzas  is $" + newOrder.orderCost() +".");
+
+    $('#toppings input:checked').each(function(){
+      this.checked = false;
+    })
   });
 });

@@ -1,4 +1,16 @@
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 .new-pizza{
+  display: block;
+  padding: 40;
+  float: left;
+  width: 400px;
+}
+
+.pizza-order{
+  margin-left: 400px;
   display: block;
   padding: 40;
 }
