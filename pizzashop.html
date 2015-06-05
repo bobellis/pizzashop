@@ -10,40 +10,42 @@
 <script src="js/scripts.js"></script>
   </head>
   <body>
-    <div class="pizza-order">
+    <div class="new-pizza">
       <form action="submit" id="add-pizza-form">
         <label> What size pizza do you want?
           <select class = "form-control" id="pizza-size">
-            <option>small</option>
-            <option>medium</option>
-            <option>large</option>
+            <option value="small">small</option>
+            <option value="medium">medium</option>
+            <option value="large">large</option>
           </select>
         </label>
         <br>
         <label> Please select your toppings:
+          <div id=toppings>
           <br>
-          <input type="checkbox" name="toppings" value="anchovies"> anchovies
+          <input class="topping" type="checkbox" name="topping" value="anchovies"> anchovies
           <br>
-          <input type="checkbox" name="toppings" value="bacon"> bacon</input>
+          <input type="checkbox" name="topping" value="bacon"> bacon</input>
           <br>
-          <input type="checkbox" name="toppings" value="gorgonzola"> gorgonzola</input>        <br>
-          <input type="checkbox" name="toppings" value="ham"> ham</input>
+          <input type="checkbox" name="topping" value="gorgonzola"> gorgonzola</input>        <br>
+          <input type="checkbox" name="topping" value="ham"> ham</input>
           <br>
-          <input type="checkbox" name="toppings" value="mushrooms"> mushrooms</input>        <br>
-          <input type="checkbox" name="toppings" value="onions"> onions</input>        <br>
-          <input type="checkbox" name="toppings" value="pepperoni"> pepperoni</input>        <br>
-          <input type="checkbox" name="toppings" value="pineapple"> pineapple</input>        <br>
+          <input type="checkbox" name="topping" value="mushrooms"> mushrooms</input>        <br>
+          <input type="checkbox" name="topping" value="onions"> onions</input>        <br>
+          <input type="checkbox" name="topping" value="pepperoni"> pepperoni</input>        <br>
+          <input type="checkbox" name="topping" value="pineapple"> pineapple</input>        <br>
+          </div>
         </label>
           <button class="btn btn-success" type="submit">Add Pizza</button>
       </form>
-
-    <form id="order">
-      <h3>Your order: </h3>
-
-    </form>
   </div>
 
-    <span id="total"></span>
+  <div id="pizza-order">
+    Here's your order so far: 
+    <ul id="pizza-list">
+    </ul>
+    <span id="order"></span>
+  </div>
     <a href="pizzashop.html">Start Over</a>
   </body>
 </html>
