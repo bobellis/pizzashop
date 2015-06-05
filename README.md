@@ -4,7 +4,7 @@ By Bob Ellis (<a href="https://github.com/bobellis" target="#">GitHub</a>)
 
 @ Epicodus Programming School, Portland, OR
 
-GNU General Public License, version 3 (see below). Copyright (c) 2015 Ian C. MacDonald.
+GNU General Public License, version 3 (see below). Copyright (c) 2015 Bob Ellis.
 
 ### Description
 
