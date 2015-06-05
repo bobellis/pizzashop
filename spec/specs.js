@@ -12,4 +12,12 @@ describe('order', function(){
     var newOrder = new Order(newPizza);
     expect(newOrder.pizzas).to.eql([newPizza]);
   });
+
+  it("allows a pizza to be added to an order", function(){
+    var newPizza = new Pizza("large", ["onions", "pepporoni"]);
+    var newOrder = new Order(newPizza);
+    var newPizza2 = new Pizza("medium", ["onions", "pepporoni"]);
+    newOrder.addPizza(newPizza2);
+    expect(newOrder.pizzas).to.eql([newPizza, newPizza2]);
+  });
 });

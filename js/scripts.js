@@ -3,11 +3,13 @@ function Pizza(pizzaSize, toppings) {
   this.toppings = toppings;
 }
 
+
+
 function Order(pizza){
   this.pizzas = [pizza]
 }
 
 
 Order.prototype.addPizza = function(pizza) {
-  this.pizzas = this.pizzas.push(pizza);
+  this.pizzas.push(pizza);
 }
