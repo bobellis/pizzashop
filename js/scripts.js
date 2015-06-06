@@ -42,8 +42,7 @@ Order.prototype.orderCost = function() {
 
 $(function(){
 
-  var order;
-  newOrder = new Order;
+  var newOrder = new Order;
 
   $("form#add-pizza-form").submit(function(event) {
     event.preventDefault();

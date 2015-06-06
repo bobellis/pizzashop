@@ -15,6 +15,7 @@ describe('order', function(){
   it("creates a new order object that contains pizza/s", function(){
     var newPizza = new Pizza("large", ["onions", "pepperoni"]);
     var newOrder = new Order(newPizza);
+    newOrder.addPizza(newPizza);
     expect(newOrder.pizzas).to.eql([newPizza]);
   });
 
@@ -22,6 +23,7 @@ describe('order', function(){
     var newPizza = new Pizza("large", ["onions", "pepperoni"]);
     var newOrder = new Order(newPizza);
     var newPizza2 = new Pizza("medium", ["onions", "pepperoni"]);
+    newOrder.addPizza(newPizza)
     newOrder.addPizza(newPizza2);
     expect(newOrder.pizzas).to.eql([newPizza, newPizza2]);
   });
@@ -30,6 +32,7 @@ describe('order', function(){
     var newPizza = new Pizza("large", ["onions", "pepperoni"]);
     var newOrder = new Order(newPizza);
     var newPizza2 = new Pizza("medium", ["onions", "pepperoni"]);
+    newOrder.addPizza(newPizza)
     newOrder.addPizza(newPizza2);
     expect(newOrder.orderCost()).to.equal(34);
   })
